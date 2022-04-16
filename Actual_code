@@ -1,0 +1,73 @@
+########## Question 1
+
+def palindrome(no):
+    b=no[::-1]
+    return b
+a=list(input("Enter the number"))
+c=[]
+c=palindrome(a)
+if a==c:
+    print("It is a palindrome number")
+else:
+    print("It is not a palindrome number")
+
+
+def palindrome(number):
+    remainder=0
+    while(number>0):
+        b=number%10
+        remainder=remainder*10+b
+        number//=10
+     return remainder
+a=int(input("Enter the number"))
+c=0
+c=palindrome(a)
+if a==c:
+    print("It is a palindrome number")
+else:
+    print("It is not a palindrome number")
+
+
+
+#################### Question 2
+
+def factorial(a):
+    if a==1:
+        return a
+    else:
+        return a*factorial(a-1)
+a=int(input("enter the number"))
+c=factorial(a)
+print(c)
+
+
+######################### Question 3
+
+def palindrome(b):
+    d=reversed(b)
+    return d
+a=input("enter a word to check whether it is palindrome or not")
+c=palindrome(a)
+if list(a)==list(c):
+    print("Yes, It is a Palindrome string")
+else:
+    print("No,It is not a Palindrome string")
+
+
+######################### Question 4
+
+def count(a):
+    b={}
+    for i in a:
+        count=0
+        for j in a:
+            if (i==j):
+                count+=1
+        b[i]=count
+    return b
+a=input("Enter the string")
+b=count(a)
+for i in b:
+    print("The Word",i,"has a word count of",b[i])
+
+
